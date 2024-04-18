@@ -205,12 +205,9 @@ html{
     background: #0146fe;
     color: #fff;
 }
-/* .consumers__card-block{
-    position: relative;
-} */
+
 .consumers__slider{
     display: flex;
-
     align-items: center;
     flex-direction: column;
     width: 1240px;
@@ -218,14 +215,16 @@ html{
     gap: 24px;
 }
 .consumers__card-block{
+    display: flex;
     height: 484px;
     position: relative;
     width: 1137px;
 }
 .consumers__card{
-    position: absolute;
-    display: flex;
+    display: none;
     gap: 18px;
+    width: 1137px;
+    height: 422px;
     align-items: center;
     justify-content: center;
     border: 2px solid rgba(0, 0, 0, 0.04);
@@ -234,21 +233,30 @@ html{
     background: #fff;
 }
 .consumers__card_visible{
-    top: 17px;
+    position: absolute;
+    top: 0px;
     right: 0;
     display: flex;
-    width: 1137px;
-    height: 422px;
     z-index: 3;
 }
 .consumers__card_2{
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    border-radius: 32px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    position: absolute;
     width: 1042px;
     height: 386px;
-    top: 75px;
+    top: 65px;
     right: 40px;
     z-index: 2;
 }
 .consumers__card_3{
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    border-radius: 32px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    position: absolute;
     width: 973px;
     height: 361px;
     top: 120px;
@@ -302,7 +310,7 @@ html{
 }
 .help__card-block{
     display: grid;
-    row-gap: 56px;
+    row-gap: 90px;
     column-gap: 16px;
     grid-template-columns: repeat(3, 295px);
     align-items: center;
@@ -313,7 +321,7 @@ html{
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 14px;
+    gap: 24px;
 }
 .help__subtitle{
     font: 900 34px / 1 var(--font-family);

@@ -9,13 +9,7 @@ const addTagsClick = () => {
             let clickedBtn = e.target;
             removeSeletedBtn();
             selectedClickBtn(clickedBtn);
-            if(clickedBtn.innerText === "For travelers"){
-                
-            }else if(clickedBtn.innerText === "For travel organization"){
-
-            }else{
-
-            }
+            showCardBySelectedBtn(clickedBtn.innerText);
         }
     })
 };
@@ -29,4 +23,15 @@ const removeSeletedBtn = () =>{
 const selectedClickBtn = (clickedBtn) =>{
     clickedBtn.classList.add('consumers__btn_colored');
 
+}
+const showCardBySelectedBtn = (selectedBtn) =>{
+    let cards = document.querySelectorAll('.consumers__card');
+    cards.forEach(card => {
+        card.classList.remove('consumers__card_visible');
+        card.querySelectorAll('.consumers__card-title').forEach(title =>{
+            if(selectedBtn == title.innerText){
+                card.classList.add('consumers__card_visible');
+            }
+        })
+    })
 }
