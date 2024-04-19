@@ -1,1 +1,1 @@
- travelAndHospitality](https://annyablonskaya.github.io/travelAndHospitality/
+deploy: https://annyablonskaya.github.io/travelAndHospitality/
