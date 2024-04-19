@@ -73,6 +73,7 @@ html{
     line-height: 1.2;
     letter-spacing: -0.01em;
     color: #fff;
+    cursor: pointer;
 }
 .free-trial__btn{
     width: 366px;
